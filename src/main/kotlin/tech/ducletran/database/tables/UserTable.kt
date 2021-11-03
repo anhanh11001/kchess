@@ -1,11 +1,8 @@
 package tech.ducletran.database.tables
 
-import org.jetbrains.exposed.sql.Table
+import org.jetbrains.exposed.dao.id.LongIdTable
 
-object UserTable : Table() {
-    val userId = long("user_id")
-    val name = long("name")
-    val profileUrl = long("profile_url")
-
-    override val primaryKey = PrimaryKey(userId)
+object UserTable : LongIdTable() {
+    val name = varchar("name", length = 50)
+    val profileUrl = text("profile_url")
 }
