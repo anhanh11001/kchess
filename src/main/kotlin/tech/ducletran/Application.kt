@@ -10,6 +10,7 @@ fun main() {
         val kChessDatabase = KChessDatabase()
         kChessDatabase.setupDatabase()
 
+        configureDependencyInjection()
         configureRouting()
         configureSecurity()
         configureSerialization()

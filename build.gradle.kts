@@ -38,4 +38,10 @@ dependencies {
     val postgresqlVersion = "42.3.1"
     implementation("org.postgresql:postgresql:$postgresqlVersion")
 
+    // Koin - Dependency Injection
+    val koinVersion = "3.1.3"
+    implementation("io.insert-koin:koin-core:$koinVersion")
+    implementation("io.insert-koin:koin-ktor:$koinVersion")
+    implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
+
 }
