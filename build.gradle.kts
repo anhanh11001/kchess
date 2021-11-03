@@ -38,6 +38,10 @@ dependencies {
     val postgresqlVersion = "42.3.1"
     implementation("org.postgresql:postgresql:$postgresqlVersion")
 
+    // HikariCP - JDBC Connection Pool
+    val hikariVersion = "5.0.0"
+    implementation("com.zaxxer:HikariCP:$hikariVersion")
+
     // Koin - Dependency Injection
     val koinVersion = "3.1.3"
     implementation("io.insert-koin:koin-core:$koinVersion")
